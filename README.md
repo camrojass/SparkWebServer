@@ -1,8 +1,9 @@
 # SparkWebServer Taller 1
-Primer repositorio para la clase de maestría AYGO de la Escuela Colombiana de Ingeniería
-URL Github: https://github.com/camrojass/SparkWebServer.git
+Primer repositorio para la clase de maestría AYGO de la Escuela Colombiana de Ingeniería.
 
-**Indice**
+**URL Github**: https://github.com/camrojass/SparkWebServer.git
+
+## Indice
 1. [Descripcion Inicial](#id1)
 2. [Primera parte: crear la aplicación web](#id2)
 3. [Segunda parte: crear imagen para docker y subirla](#id3)
