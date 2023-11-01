@@ -2,10 +2,20 @@
 Primer repositorio para la clase de maestría AYGO de la Escuela Colombiana de Ingeniería
 URL Github: https://github.com/camrojass/SparkWebServer.git
 
-## Descripcion Inicial
+**Indice**
+1. [Descripcion Inicial](#id1)
+2. [Primera parte: crear la aplicación web](#id2)
+3. [Segunda parte: crear imagen para docker y subirla](#id3)
+4. [Tercera Parte: Subir imagen a Docker Hub](#id4)
+5. [Cuarta Parte: Subir imagen a Docker Hub](#id5)
+6. [Autores]((#id6))
+
+    
+## Descripcion Inicial <a name="id1"></a>
 El taller consiste en crear una aplicación web pequeña usando el micro-framework de Spark java (http://sparkjava.com/). Una vez tengamos esta aplicación procederemos a construir un container para docker para la aplicación y los desplegaremos y configuraremos en nuestra máquina local. Luego, cerremos un repositorio en DockerHub y subiremos la imagen al repositorio. Finalmente, crearemos una máquina virtual de en AWS, instalaremos Docker , y desplegaremos el contenedor que acabamos de crear.
 
-### Primera parte crear la aplicación web
+    
+## Primera parte: crear la aplicación web <a name="id2"></a>
 1. Cree un proyecto java usando maven.
 2. Cree la clase principal
 
@@ -178,7 +188,7 @@ log4j.appender.stdout.Target=System.out
 log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
 log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
 ```
-## Segunda parte: crear imagen para docker y subirla
+## Segunda parte: crear imagen para docker y subirla <a name="id3"></a>
 1. En la raíz de su proyecto cree un archivo denominado Dockerfile con el siguiente contenido:
  ```
 FROM openjdk:8
@@ -232,7 +242,7 @@ CONTAINER ID   IMAGE               COMMAND                  CREATED          STA
 ![image](https://github.com/camrojass/SparkWebServer/assets/100396227/7c8d6b24-91ed-41d8-83ab-7e90975cf55a)
 
 
-8. Use docker-compose para generar automáticamente una configuración docker, por ejemplo un container y una instancia a de mongo en otro container. Cree en la raíz de su directorio el archivo docker-compose.yml con le siguiente contenido:
+7. Use docker-compose para generar automáticamente una configuración docker, por ejemplo un container y una instancia a de mongo en otro container. Cree en la raíz de su directorio el archivo docker-compose.yml con le siguiente contenido:
 
 ```
 version: '2'
@@ -284,7 +294,7 @@ b59866da617a   mongo:3.6.1          "docker-entrypoint.s…"   19 seconds ago   
 Debería ver algo así en el Docker Desktop dashboard:
 ![image](https://github.com/camrojass/SparkWebServer/assets/100396227/fcd5c6ca-d2f4-40ec-a028-57dcf002d08d)
 
-## Tercera Parte: Subir imagen a Docker Hub
+## Tercera Parte: Subir imagen a Docker Hub <a name="id4"></a>
 1. Ingrese a su cuenta de Dockerhub.
 ![image](https://github.com/camrojass/SparkWebServer/assets/100396227/bc9185f7-46e5-4231-bd7a-44169f565232)
 
@@ -317,7 +327,8 @@ docker push dnielben/firstsprkwebapprepo:latest
 ```
 En la pantalla de Tags de su repositorio en Dockerhub debería ver algo así:
 ![image](https://github.com/camrojass/SparkWebServer/assets/100396227/84091183-8ba4-4cd4-9ba6-c27d79c0a161)
-## Cuarta Parte: Subir imagen a Docker Hub
+
+## Cuarta Parte: Subir imagen a Docker Hub <a name="id5"></a>
 1. Cree una máquina virtual linux en AWS
 2. Acceda a la máquina virtual
 ![image](https://github.com/camrojass/SparkWebServer/assets/100396227/eaa21d3a-95fe-4104-887c-a2b0e8eaed33)
@@ -356,6 +367,6 @@ http://ec2-54-209-214-238.compute-1.amazonaws.com:42000/hello
 ![image](https://github.com/camrojass/SparkWebServer/assets/100396227/5218594b-e54a-48fa-8141-a28c56ff93ca)
 
 
-## Autores ✒️
+## Autores <a name="id6"></a> ✒️ 
 * **Luis Daniel Benavides** - *Versión inicial* - [dnielben](https://github.com/dnielben) 
 * **Camilo Alejandro Rojas** - *Trabajo y documentación* - [camrojass](https://github.com/camrojass)
