@@ -8,7 +8,7 @@ URL Github: https://github.com/camrojass/SparkWebServer.git
 3. [Segunda parte: crear imagen para docker y subirla](#id3)
 4. [Tercera Parte: Subir imagen a Docker Hub](#id4)
 5. [Cuarta Parte: Subir imagen a Docker Hub](#id5)
-6. [Autores]((#id6))
+6. [Autores](#id6)
 
     
 ## Descripcion Inicial <a name="id1"></a>
