@@ -16,7 +16,8 @@ Primer repositorio para la clase de maestría AYGO de la Escuela Colombiana de I
 El taller consiste en crear una aplicación web pequeña usando el micro-framework de Spark java (http://sparkjava.com/). Una vez se tenga esta aplicación, se procede a construir un container para docker para la aplicación y se desplegara y configurara en la máquina local. Luego, se cierra un repositorio en DockerHub y se sube la imagen al repositorio. Finalmente, se crea una máquina virtual de en AWS, se instala Docker , y despliega el contenedor que se acabo de crear.
 
 ### Diagrama de arquitectura
-![Diagrama de arquitectura](https://github.com/camrojass/SparkWebServer/assets/100396227/e6a8b4dd-daae-49ea-8447-d7c358950ed1)
+![Diagrama de arquitectura](https://github.com/camrojass/SparkWebServer/assets/100396227/8c6f2ef7-c36d-4cce-bf47-43ea347a7915)
+
 El diagrama representa un programa en el framework Spark de java disponible un contenedor de Docker desplegado en una instancia de EC2 de AWS, el cuál recibe una petición desde un browser en una maquina local. Dado que se configuró previamente el grupo de seguridad, la petición es aceptada y el programa procesa la petición, Dando respuesta al browser
     
 ## Primera parte: crear la aplicación web <a name="id2"></a>
